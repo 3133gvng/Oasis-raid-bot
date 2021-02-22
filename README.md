@@ -4,11 +4,17 @@ Le bot de raid de la oasis (discord.js 12).
 Modules :
 
 `npm install discord.js
+
 npm install zlib-sync
+
 npm install erlpack
+
 npm install sodium
+
 npm install libsodium-wrappers
+
 npm install bufferutil
+
 npm install utf-8-validate`
 
 Attention : si vous avez des erreur au démarrage, c'est normal. faut modifier le code car tout en haut ya des id de salons que votre bot a pas accès.
