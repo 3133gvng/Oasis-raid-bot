@@ -1,6 +1,8 @@
 # Oasisbot-purificateur
 Le bot de raid de la oasis. (discord.js 12).
 
+**Installation : **
+
 Modules :
 
 `npm install discord.js`
@@ -16,6 +18,10 @@ Modules :
 `npm install bufferutil`
 
 `npm install utf-8-validate`
+
+Si vous devez mettre a jour npm, faites ceci : `npm install -g npm` ou `sudo npm install -g npm`
+
+Si vous voulez mettre a jour les module nodejs, faites ceci : `npm update`
 
 Attention : si vous avez des erreur au démarrage, c'est normal. faut modifier le code car tout en haut ya des id de salons que votre bot a pas accès.
 
