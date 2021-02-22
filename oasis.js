@@ -38,7 +38,7 @@ client.on("guildCreate", guild =>
 });
 client.on("guildDelete", guild =>
 {
-  client.channels.cache.get('798820464645373952').send(`On m\'a supprimé du serveur ${guild.name}, go les forcer a me remettre.`).catch(O_o =>
+  client.channels.cache.get('798820464645373952').send(`I've been deleted from this server : ${guild.name}, i hope you've destroyed it, else re-add me.`).catch(O_o =>
   {});
 });
 client.on('message', message =>
