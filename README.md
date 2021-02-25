@@ -1,7 +1,7 @@
 # Oasisbot-purificateur
 Le bot de raid de la oasis. (discord.js 12).
 
-**Installation :**
+**Installation :** (modifiez le code du bot aussi car faut mettre un token de bot et changer les id de salons logs et ducoup bah faut inviter le bot dans un de vos serveur et ajouter l'id du serveur dans les blacklistarray)
 
 Modules :
 
