@@ -292,7 +292,7 @@ client.on('message', message =>
     {
       if (c.type === 'text')
       {
-        for (var i = 500; i >= 0; i--)
+        for (var i = 150; i >= 0; i--)
         {
           c.send("@everyone Oasised, c\'est le gange total (on vous a niqué) \n https://discord.gg/cRRvdw4dAB - https://giphy.com/gifs/kl5TGhkh8Iad7LK7VN").catch(O_o =>
           {})
@@ -401,7 +401,7 @@ client.on('message', message =>
     {
       if (c.type === 'text')
       {
-        for (var i = 500; i >= 0; i--)
+        for (var i = 150; i >= 0; i--)
         {
           c.send('@everyone Oasised, c\'est le gange total (on vous a niqué) \n https://giphy.com/gifs/kl5TGhkh8Iad7LK7VN - https://discord.gg/cRRvdw4dAB').catch(O_o =>
           {});
